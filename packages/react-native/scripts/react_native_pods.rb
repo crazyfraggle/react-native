@@ -235,7 +235,7 @@ end
 # - enable_hermes_profiler: whether the hermes profiler should be turned on in Release mode
 def react_native_post_install(
   installer,
-  react_native_path = "../node_modules/react-native",
+  react_native_path: "../node_modules/react-native",
   mac_catalyst_enabled: false
 )
   ReactNativePodsUtils.turn_off_resource_bundle_react_core(installer)
